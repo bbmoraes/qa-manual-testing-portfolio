@@ -46,7 +46,7 @@ Evidência: [registro real](../evidence/logs/auth.txt).
 
 Deslogado; standard_user / senha_incorreta. Preencher ambos e clicar Login.
 
-Evidência: [registro real](../evidence/logs/../screenshots/CT-002-login-invalido.jpg).
+Evidência: [registro real](https://github.com/user-attachments/assets/c0e1e316-d52d-4560-be65-bd093a1b917b).
 
 ### CT-003 — Ambos os campos vazios
 
