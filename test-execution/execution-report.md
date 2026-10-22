@@ -40,7 +40,7 @@ Os IDs são agrupados por funcionalidade, não por ordem temporal estrita. CT-02
 
 ## Evidências e limites
 
-Capturas JPEG originais em [screenshots](../evidence/screenshots/) e extrações textuais em [logs](../evidence/logs/). Consulte o [índice](../evidence/README.md) para relacionar arquivos a casos. A resolução varia conforme o tamanho capturado pelo navegador, sem simular dispositivos.
+Índice das capturas reais anexadas no GitHub (PNG) em [screenshots](../evidence/screenshots/README.md); os JPEGs originais permanecem no pacote ZIP entregue. Extrações textuais em [logs](../evidence/logs/). Consulte o [índice](../evidence/README.md) para relacionar arquivos a casos. A resolução varia conforme o tamanho capturado pelo navegador, sem simular dispositivos.
 
 Não executado: outros navegadores, dispositivos móveis, acessibilidade completa, segurança, carga, API, PDF do pedido, Dynamic Catalog, links externos, checkout vazio, formatos postais internacionais e limites máximos de texto. Nenhum desses recursos é implicitamente aprovado. Os botões/links testados são aqueles descritos nos procedimentos; não há cobertura de todos os links do site.
 
