@@ -57,9 +57,9 @@ Relatórios completos: [passos, impacto, comparação e evidências](bug-reports
 
 A confirmação abaixo foi capturada depois de finalizar o pedido fictício com standard_user. Ela comprova este estado, não todos os casos do projeto.
 
-![Pedido fictício concluído](evidence/screenshots/CT-018-compra-concluida.jpg)
+![Pedido fictício concluído](https://github.com/user-attachments/assets/21ee4864-37d0-4e48-9f1a-19e7aff6c10e)
 
-As capturas originais são JPEG, formato retornado pelo navegador. Os registros textuais complementam o que não cabe no viewport. [Índice de evidências](evidence/README.md).
+Os JPEGs originais estão no pacote ZIP entregue à estudante. No GitHub, as capturas foram convertidas para PNG sem alterar seus pixels e publicadas como anexos pelo editor, pois o upload direto falhou. O índice em evidence/screenshots reúne as 11 imagens; os registros textuais complementam o que não cabe no viewport. [Índice de evidências](evidence/README.md).
 
 ## Aprendizados e próximos passos
 
