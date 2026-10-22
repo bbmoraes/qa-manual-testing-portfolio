@@ -1,0 +1,88 @@
+- banner:
+  - button "Open Menu"
+  - img "Open Menu"
+  - generic: Swag Labs
+  - button "Cart, 1 items":
+    - generic: "1"
+  - generic: "Checkout: Your Information"
+- main:
+  - form "Checkout information":
+    - textbox "First Name": A
+    - textbox "Last Name"
+    - textbox "Zip/Postal Code"
+    - alert:
+      - button "Dismiss error":
+      - text: "Error: Last Name is required"
+    - button "Cancel"
+    - button "Continue" [active]
+- contentinfo:
+  - list:
+    - link "X":
+      - /url: https://x.com/saucelabs
+    - link "Facebook":
+      - /url: https://www.facebook.com/saucelabs
+    - link "LinkedIn":
+      - /url: https://www.linkedin.com/company/sauce-labs/
+  - generic: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy
+
+- banner:
+  - button "Open Menu"
+  - img "Open Menu"
+  - generic: Swag Labs
+  - button "Cart, 1 items":
+    - generic: "1"
+  - generic: "Checkout: Your Information"
+- main:
+  - form "Checkout information":
+    - textbox "First Name": A
+    - textbox "Last Name": B
+    - textbox "Zip/Postal Code"
+    - alert:
+      - button "Dismiss error":
+      - text: "Error: Postal Code is required"
+    - button "Cancel"
+    - button "Continue" [active]
+- contentinfo:
+  - list:
+    - link "X":
+      - /url: https://x.com/saucelabs
+    - link "Facebook":
+      - /url: https://www.facebook.com/saucelabs
+    - link "LinkedIn":
+      - /url: https://www.linkedin.com/company/sauce-labs/
+  - generic: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy
+
+- banner:
+  - button "Open Menu"
+  - img "Open Menu"
+  - generic: Swag Labs
+  - button "Cart, 1 items":
+    - generic: "1"
+  - generic: "Checkout: Overview"
+- main:
+  - generic: QTY
+  - generic: Description
+  - generic: "1"
+  - button "View details for Sauce Labs Backpack":
+    - generic: Sauce Labs Backpack
+  - generic: carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.
+  - generic: $29.99
+  - generic: "Payment Information:"
+  - generic: "SauceCard #31337"
+  - generic: "Shipping Information:"
+  - generic: Free Pony Express Delivery!
+  - generic: Price Total
+  - generic: "Item total: $29.99"
+  - generic: "Tax: $2.40"
+  - generic: "Total: $32.39"
+  - button "Cancel"
+  - button "Finish"
+- contentinfo:
+  - list:
+    - link "X":
+      - /url: https://x.com/saucelabs
+    - link "Facebook":
+      - /url: https://www.facebook.com/saucelabs
+    - link "LinkedIn":
+      - /url: https://www.linkedin.com/company/sauce-labs/
+  - generic: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy
