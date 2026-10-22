@@ -1,0 +1,272 @@
+[
+  {
+    "id": "CT-001",
+    "feature": "Login",
+    "scenario": "Credenciais públicas válidas",
+    "expected": "Products e catálogo",
+    "actual": "Products com seis produtos",
+    "status": "Passed",
+    "procedure": "Login deslogado; standard_user / secret_sauce. Preencher ambos e clicar Login.",
+    "evidence": "auth.txt"
+  },
+  {
+    "id": "CT-002",
+    "feature": "Login",
+    "scenario": "Senha inválida",
+    "expected": "Negar acesso com mensagem de credenciais",
+    "actual": "Epic sadface: Username and password do not match any user in this service",
+    "status": "Passed",
+    "procedure": "Deslogado; standard_user / senha_incorreta. Preencher ambos e clicar Login.",
+    "evidence": "../screenshots/CT-002-login-invalido.jpg"
+  },
+  {
+    "id": "CT-003",
+    "feature": "Login",
+    "scenario": "Ambos os campos vazios",
+    "expected": "Exigir username",
+    "actual": "Epic sadface: Username is required",
+    "status": "Passed",
+    "procedure": "Deslogado. Limpar explicitamente os dois campos e clicar Login.",
+    "evidence": "control.txt"
+  },
+  {
+    "id": "CT-004",
+    "feature": "Login",
+    "scenario": "Senha vazia",
+    "expected": "Exigir password",
+    "actual": "Epic sadface: Password is required",
+    "status": "Passed",
+    "procedure": "Deslogado. Preencher standard_user, limpar password e clicar Login.",
+    "evidence": "auth.txt"
+  },
+  {
+    "id": "CT-005",
+    "feature": "Login",
+    "scenario": "Conta bloqueada",
+    "expected": "Negar acesso por bloqueio",
+    "actual": "Epic sadface: Sorry, this user has been locked out.",
+    "status": "Passed",
+    "procedure": "Deslogado. Entrar com locked_out_user / secret_sauce.",
+    "evidence": "auth.txt"
+  },
+  {
+    "id": "CT-006",
+    "feature": "Catálogo",
+    "scenario": "Preço crescente",
+    "expected": "Preços em ordem crescente",
+    "actual": "7.99; 9.99; 15.99; 15.99; 29.99; 49.99",
+    "status": "Passed",
+    "procedure": "standard_user autenticado. Selecionar Price (low to high) e conferir os seis preços.",
+    "evidence": "catalog.txt"
+  },
+  {
+    "id": "CT-007",
+    "feature": "Catálogo",
+    "scenario": "Nome decrescente",
+    "expected": "Nomes de Z a A",
+    "actual": "Test.allTheThings; Onesie; Fleece Jacket; Bolt T-Shirt; Bike Light; Backpack",
+    "status": "Passed",
+    "procedure": "standard_user autenticado. Selecionar Name (Z to A) e comparar nomes.",
+    "evidence": "catalog.txt"
+  },
+  {
+    "id": "CT-008",
+    "feature": "Detalhes",
+    "scenario": "Abrir mochila pelo nome",
+    "expected": "Backpack e preço 29.99",
+    "actual": "Backpack e preço 29.99",
+    "status": "Passed",
+    "procedure": "standard_user no catálogo. Clicar no nome Sauce Labs Backpack.",
+    "evidence": "catalog.txt"
+  },
+  {
+    "id": "CT-009",
+    "feature": "Carrinho",
+    "scenario": "Adicionar um produto nos detalhes",
+    "expected": "Um item e botão Remove",
+    "actual": "Cart, 1 items e Remove",
+    "status": "Passed",
+    "procedure": "standard_user nos detalhes da mochila; carrinho vazio. Clicar Add to cart.",
+    "evidence": "cart.txt"
+  },
+  {
+    "id": "CT-010",
+    "feature": "Carrinho",
+    "scenario": "Dois produtos distintos",
+    "expected": "Backpack 29.99 + Bike Light 9.99; QTY 1 cada",
+    "actual": "Dois itens, nomes e preços corretos; QTY 1 cada",
+    "status": "Passed",
+    "procedure": "Mochila adicionada. Back to products; abrir Bike Light pelo nome; Add to cart; abrir Cart.",
+    "evidence": "cart.txt"
+  },
+  {
+    "id": "CT-011",
+    "feature": "Carrinho",
+    "scenario": "Remover Bike Light",
+    "expected": "Somente mochila; contador 1",
+    "actual": "Somente Backpack 29.99; contador 1",
+    "status": "Passed",
+    "procedure": "standard_user com dois itens no carrinho. Clicar Remove da Bike Light (segunda linha).",
+    "evidence": "checkout1.txt"
+  },
+  {
+    "id": "CT-012",
+    "feature": "Carrinho",
+    "scenario": "Persistir após recarga",
+    "expected": "Manter mochila e quantidade 1",
+    "actual": "Mochila e quantidade 1 mantidas",
+    "status": "Passed",
+    "procedure": "Após CT-011, recarregar a página do carrinho e conferir item.",
+    "evidence": "checkout1.txt"
+  },
+  {
+    "id": "CT-013",
+    "feature": "Checkout",
+    "scenario": "Formulário vazio",
+    "expected": "Exigir First Name",
+    "actual": "Error: First Name is required",
+    "status": "Passed",
+    "procedure": "standard_user com mochila. Checkout; sem preencher dados, clicar Continue.",
+    "evidence": "checkout1.txt"
+  },
+  {
+    "id": "CT-014",
+    "feature": "Checkout",
+    "scenario": "Sobrenome vazio",
+    "expected": "Exigir Last Name",
+    "actual": "Error: Last Name is required",
+    "status": "Passed",
+    "procedure": "Na tela de dados, preencher apenas First Name=A; Continue.",
+    "evidence": "checkout2.txt"
+  },
+  {
+    "id": "CT-015",
+    "feature": "Checkout",
+    "scenario": "Código postal vazio",
+    "expected": "Exigir Postal Code",
+    "actual": "Error: Postal Code is required",
+    "status": "Passed",
+    "procedure": "First Name=A e Last Name=B; postal vazio. Clicar Continue.",
+    "evidence": "checkout2.txt"
+  },
+  {
+    "id": "CT-016",
+    "feature": "Checkout",
+    "scenario": "Dados fictícios preenchidos",
+    "expected": "Avançar ao Overview",
+    "actual": "Overview com mochila",
+    "status": "Passed",
+    "procedure": "Preencher Pessoa / Teste / 12345 e clicar Continue.",
+    "evidence": "checkout2.txt"
+  },
+  {
+    "id": "CT-017",
+    "feature": "Checkout",
+    "scenario": "Conferência aritmética",
+    "expected": "29.99 + 2.40 = 32.39",
+    "actual": "Subtotal 29.99; Tax 2.40; Total 32.39",
+    "status": "Passed",
+    "procedure": "No Overview do CT-016, comparar item e somar valores exibidos. Não avalia conformidade tributária.",
+    "evidence": "checkout2.txt"
+  },
+  {
+    "id": "CT-018",
+    "feature": "Checkout",
+    "scenario": "Finalizar pedido fictício",
+    "expected": "Confirmação e carrinho vazio",
+    "actual": "Thank you for your order!; Cart, empty",
+    "status": "Passed",
+    "procedure": "Overview com mochila. Clicar Finish. Nenhum pagamento real.",
+    "evidence": "complete.txt"
+  },
+  {
+    "id": "CT-019",
+    "feature": "Navegação",
+    "scenario": "Voltar ao catálogo",
+    "expected": "Products e carrinho vazio",
+    "actual": "Products e Cart, empty",
+    "status": "Passed",
+    "procedure": "Na confirmação, clicar Back Home.",
+    "evidence": "complete.txt"
+  },
+  {
+    "id": "CT-020",
+    "feature": "Sessão",
+    "scenario": "Logout",
+    "expected": "Retornar ao formulário de login",
+    "actual": "Form Login com Username e Password",
+    "status": "Passed",
+    "procedure": "Após CT-019, Open Menu → Logout. Não avalia invalidação de tokens no servidor.",
+    "evidence": "complete.txt"
+  },
+  {
+    "id": "CT-021",
+    "feature": "Catálogo",
+    "scenario": "Ordenação em problem_user",
+    "expected": "Aplicar ordem crescente como na conta padrão",
+    "actual": "Não altera: A to Z permanece; preços começam por 29.99, 9.99",
+    "status": "Failed",
+    "procedure": "Login problem_user / secret_sauce, carrinho vazio. Selecionar Price (low to high); observar e repetir seleção. BUG-001.",
+    "evidence": "problem2.txt"
+  },
+  {
+    "id": "CT-022",
+    "feature": "Detalhes",
+    "scenario": "Identidade em problem_user",
+    "expected": "Clicar Backpack deve abrir Backpack 29.99",
+    "actual": "Abre Fleece Jacket 49.99 em duas tentativas",
+    "status": "Failed",
+    "procedure": "problem_user no catálogo. Clicar no nome Backpack; Back to products; repetir. BUG-002.",
+    "evidence": "problem3.txt"
+  },
+  {
+    "id": "CT-023",
+    "feature": "Carrinho",
+    "scenario": "Remoção no catálogo em problem_user",
+    "expected": "Retirar mochila; contador vazio",
+    "actual": "Após dois cliques em Remove, contador 1; mochila também permanece no carrinho",
+    "status": "Failed",
+    "procedure": "problem_user com carrinho vazio. No catálogo, Add to cart da Backpack; Remove; repetir; abrir carrinho. BUG-003.",
+    "evidence": "problem4.txt"
+  },
+  {
+    "id": "CT-024",
+    "feature": "Checkout",
+    "scenario": "Cancelar resumo",
+    "expected": "Voltar ao catálogo mantendo item",
+    "actual": "Products com mochila e contador 1",
+    "status": "Passed",
+    "procedure": "standard_user com mochila. Checkout, A/B/1, Continue; no Overview clicar Cancel.",
+    "evidence": "boundary.txt"
+  },
+  {
+    "id": "CT-025",
+    "feature": "Carrinho",
+    "scenario": "Remover último item no catálogo padrão",
+    "expected": "Carrinho vazio e botão Add to cart",
+    "actual": "Cart, empty e Add to cart; estado mantido após recarga",
+    "status": "Passed",
+    "procedure": "standard_user com mochila persistida da conta anterior. Após login verificado, clicar Remove e recarregar.",
+    "evidence": "standardcontrol.txt"
+  },
+  {
+    "id": "CT-026",
+    "feature": "Pesquisa",
+    "scenario": "Buscar produto por texto",
+    "expected": "Executar pesquisa se houver campo",
+    "actual": "Campo de pesquisa não localizado no catálogo examinado; ação não executada",
+    "status": "Not Run",
+    "procedure": "Recurso não disponível na interface examinada. Não é classificado como defeito.",
+    "evidence": "catalog.txt"
+  },
+  {
+    "id": "CT-027",
+    "feature": "Carrinho",
+    "scenario": "Alterar quantidade do mesmo produto",
+    "expected": "Executar alteração se houver controle",
+    "actual": "QTY exibida como texto 1; controle de edição não localizado; ação não executada",
+    "status": "Not Run",
+    "procedure": "Recurso não disponível na interface examinada. Não é classificado como defeito.",
+    "evidence": "cart.txt"
+  }
+]
