@@ -1,0 +1,106 @@
+- banner:
+  - button "Open Menu"
+  - img "Open Menu"
+  - generic: Swag Labs
+  - button "Cart, 1 items":
+    - generic: "1"
+  - generic: Your Cart
+- main:
+  - generic: QTY
+  - generic: Description
+  - generic: "1"
+  - button "View details for Sauce Labs Backpack":
+    - generic: Sauce Labs Backpack
+  - generic: carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.
+  - generic: $29.99
+  - button "Remove"
+  - button "Continue Shopping"
+  - button "Checkout"
+- contentinfo:
+  - list:
+    - link "X":
+      - /url: https://x.com/saucelabs
+    - link "Facebook":
+      - /url: https://www.facebook.com/saucelabs
+    - link "LinkedIn":
+      - /url: https://www.linkedin.com/company/sauce-labs/
+  - generic: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy
+
+- banner:
+  - button "Open Menu"
+  - img "Open Menu"
+  - generic: Swag Labs
+  - button "Cart, 1 items":
+    - generic: "1"
+  - generic: Your Cart
+- main:
+  - generic: QTY
+  - generic: Description
+  - generic: "1"
+  - button "View details for Sauce Labs Backpack":
+    - generic: Sauce Labs Backpack
+  - generic: carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.
+  - generic: $29.99
+  - button "Remove"
+  - button "Continue Shopping"
+  - button "Checkout"
+- contentinfo:
+  - list:
+    - link "X":
+      - /url: https://x.com/saucelabs
+    - link "Facebook":
+      - /url: https://www.facebook.com/saucelabs
+    - link "LinkedIn":
+      - /url: https://www.linkedin.com/company/sauce-labs/
+  - generic: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy
+
+- banner:
+  - button "Open Menu"
+  - img "Open Menu"
+  - generic: Swag Labs
+  - button "Cart, 1 items":
+    - generic: "1"
+  - generic: "Checkout: Your Information"
+- main:
+  - form "Checkout information":
+    - textbox "First Name"
+    - textbox "Last Name"
+    - textbox "Zip/Postal Code"
+    - button "Cancel"
+    - button "Continue"
+- contentinfo:
+  - list:
+    - link "X":
+      - /url: https://x.com/saucelabs
+    - link "Facebook":
+      - /url: https://www.facebook.com/saucelabs
+    - link "LinkedIn":
+      - /url: https://www.linkedin.com/company/sauce-labs/
+  - generic: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy
+
+- banner:
+  - button "Open Menu"
+  - img "Open Menu"
+  - generic: Swag Labs
+  - button "Cart, 1 items":
+    - generic: "1"
+  - generic: "Checkout: Your Information"
+- main:
+  - form "Checkout information":
+    - textbox "First Name"
+    - textbox "Last Name"
+    - textbox "Zip/Postal Code"
+    - alert:
+      - button "Dismiss error":
+      - text: "Error: First Name is required"
+    - button "Cancel"
+    - button "Continue" [active]
+- contentinfo:
+  - list:
+    - link "X":
+      - /url: https://x.com/saucelabs
+    - link "Facebook":
+      - /url: https://www.facebook.com/saucelabs
+    - link "LinkedIn":
+      - /url: https://www.linkedin.com/company/sauce-labs/
+  - generic: © 2026 Sauce Labs. All Rights Reserved. Terms of Service | Privacy Policy
