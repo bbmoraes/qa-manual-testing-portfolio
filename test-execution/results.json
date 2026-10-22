@@ -17,7 +17,7 @@
     "actual": "Epic sadface: Username and password do not match any user in this service",
     "status": "Passed",
     "procedure": "Deslogado; standard_user / senha_incorreta. Preencher ambos e clicar Login.",
-    "evidence": "../screenshots/CT-002-login-invalido.jpg"
+    "evidence": "https://github.com/user-attachments/assets/c0e1e316-d52d-4560-be65-bd093a1b917b"
   },
   {
     "id": "CT-003",
