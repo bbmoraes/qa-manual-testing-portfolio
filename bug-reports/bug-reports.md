@@ -24,7 +24,7 @@ Ambiente comum: SauceDemo, https://www.saucedemo.com/, Chrome conectado por exte
 
 Evidências: [primeira tentativa](../evidence/logs/problem1.txt), [segunda tentativa](../evidence/logs/problem2.txt), [controle padrão](../evidence/logs/catalog.txt). A leitura do DOM confirmou que o seletor e suas opções não estavam desabilitados ([registro](../evidence/logs/problem3.txt)). A captura isolada mostra o estado final; a ação e a comparação dependem dos passos e registros, não só da imagem.
 
-![Estado após seleção](../evidence/screenshots/BUG-001-ordenacao.jpg)
+![Estado após seleção](https://github.com/user-attachments/assets/76104623-0b3d-47c0-b3ee-7e9e0a91cf38)
 
 ## BUG-002 — Nome da mochila abre detalhes da jaqueta em problem_user
 
@@ -46,9 +46,9 @@ Evidências: [primeira tentativa](../evidence/logs/problem1.txt), [segunda tenta
 
 Evidências: [primeira navegação](../evidence/logs/problem2.txt), [reprodução](../evidence/logs/problem3.txt), [mesma seleção na conta padrão](../evidence/logs/catalog.txt).
 
-![Jaqueta após clicar na mochila](../evidence/screenshots/BUG-002-produto-incorreto.jpg)
+![Jaqueta após clicar na mochila](https://github.com/user-attachments/assets/9a27fb30-ad1e-4214-bbf3-998301b6858b)
 
-![Reprodução](../evidence/screenshots/BUG-002-reproducao.jpg)
+![Reprodução](https://github.com/user-attachments/assets/ca1d6fe2-f01e-4d41-b931-3aa009046443)
 
 ## BUG-003 — Remove da mochila no catálogo não retira o item em problem_user
 
@@ -71,7 +71,7 @@ Evidências: [primeira navegação](../evidence/logs/problem2.txt), [reproduçã
 
 Evidências: [adição](../evidence/logs/problem3.txt), [duas tentativas e verificação no carrinho](../evidence/logs/problem4.txt), [remoção da mesma mochila no catálogo padrão após novo login verificado](../evidence/logs/standardcontrol.txt).
 
-![Mochila permanece no carrinho](../evidence/screenshots/BUG-003-produto-permanece.jpg)
+![Mochila permanece no carrinho](https://github.com/user-attachments/assets/579df390-bedd-4f2d-a9b3-d4840d4d5645)
 
 ## Observações que não viraram bugs
 
