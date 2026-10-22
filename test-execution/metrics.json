@@ -1,0 +1,11 @@
+{
+  "session": "EX-001",
+  "date": "2026-10-21",
+  "timezone": "America/Sao_Paulo",
+  "planned": 27,
+  "executed": 25,
+  "Passed": 22,
+  "Failed": 3,
+  "Blocked": 0,
+  "Not Run": 2
+}
